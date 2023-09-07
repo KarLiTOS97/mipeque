@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 50px;
+    color: #ffc7c7;
+}
+
+/*Carrusel*/
+.carrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding-top: 0px;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.img{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 676px;
+    width: 1034px;
+    border-radius: 10px ;
+    margin: 15px;
+    object-fit: cover;
+    filter: saturate(175%);
+}
+
+.texto{
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(63, 106, 138, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.texto h3{
+    text-shadow: 0px 0px 15px black;
+    padding-top: 40px;
+    color: white;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.texto p{
+    align-items: center;
+    padding: 20px;
+    color:white;
+    font-size: 0px;
+    font-weight: 600;
+}
+
+.imagenes .texto{
+    width: 600px;
+    height: 300px;
+    transition: 1s;
+}
+
+.imagenes:hover .texto{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-20px);
+    height: 600px;
+    background-color: rgba(63, 106, 138, 0.71);
+}
+
+.imagenes:hover .texto p{
+    transition: font-size 0s .2s linear;
+    font-size: 23px;
+    font-weight: 300;
+
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p{
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: black;
+}
+
+.puntos .bold{
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5E17EB ;
+}
